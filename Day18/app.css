@@ -1,0 +1,14 @@
+/*타입 선택자로 Label을 선택.*/
+Label{
+	-fx-padding:5;
+}
+/*유일한 아이디 선택자*/
+#id01{
+	-fx-background-color:black;
+	-fx-text-fill:yellow;
+}
+/*클래스 선택자*/
+.idClass{
+	-fx-background-color:blue;
+	-fx-text-fill:white;
+}

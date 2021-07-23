@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+
+<HBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="fx.RootController" prefHeight="300" prefWidth="500"
+alignment="CENTER" spacing="20" >
+<!-- FXML 파일당 별도의 컨트롤러를 지정해서 이벤트를 처리, FXML 레이아웃에서 이벤트 처리코드를 완전히 분리 -->
+<children>
+<Button fx:id="btn1" text="버튼1"/>
+<Button fx:id="btn2" text="버튼2" onAction="#handleBtn2Action"/>
+<!-- 컨트롤러에서 이벤트를 등록하지 않고 2 번째 이벤트 발생시 컨트롤러 클래스에 정의된 handleBtn2Action() 메소드를
+바로 호출한다.onAction="#메소드명"이 온다. (안드로이드는 onClick이다.) -->
+<Button fx:id="btn3" text="버튼3"/>
+<!-- 컨트롤러 클래스에서 @FXML 애노테이션으로 설정된 변수명과 FXML fx:id 속성값이 일치해야 한다. -->
+</children>
+
+</HBox>
