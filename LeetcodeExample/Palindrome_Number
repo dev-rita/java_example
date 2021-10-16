@@ -1,0 +1,19 @@
+/*Palindrome Number_Accepted
+Given an integer x, return true if x is palindrome integer.
+An integer is a palindrome when it reads the same backward as forward. 
+*/
+
+class Solution {
+    public boolean isPalindrome(int x) {
+        if(0<=x){
+            int num=x, reverse=0;
+            
+            while(num!=0){
+                reverse= reverse*10+num%10;//
+                num/=10;
+            }
+            return reverse == x;//리버스 숫자와 x가 같은지 true/false
+        }
+        return false;//음수는 false
+    }
+}
