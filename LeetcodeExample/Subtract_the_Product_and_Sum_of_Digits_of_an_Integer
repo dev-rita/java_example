@@ -1,0 +1,17 @@
+/*Subtract the Product and Sum of Digits of an Integer_Accepted
+Given an integer number n, return the difference between the product of its digits and the sum of its digits.
+*/
+class Solution {
+    public int subtractProductAndSum(int n) {
+        int num=0,result1=0,result2=1;
+        
+        while(n!=0){
+            num=n%10;
+            n/=10;
+            result1+=num;
+            result2*=num;
+        }
+        
+        return result2-result1;
+    }
+}
